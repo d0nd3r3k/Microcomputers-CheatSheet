@@ -1,0 +1,45 @@
+# This file describes the network interfaces available on your system
+# and how to activate them. For more information, see interfaces(5).
+
+# The loopback network interface
+auto lo
+iface lo inet loopback
+
+#Ethernet over USB
+iface usb0 inet static
+    address 192.168.7.2
+    netmask 255.255.255.0
+    network 192.168.7.0
+    gateway 192.168.7.1
+
+#WiFi
+auto wlan0
+
+iface wlan0 inet static
+address UR_IP
+gateway UR_ROUTER_IP
+netmask 255.255.255.0
+
+iface wlan0 inet dhcp
+    #OPEN
+    #wireless-essid UR_ESSID
+    #wireless-mode managed
+
+    #WEP
+    #wireless-essid UR_ESSID
+    #wireless-key UR_KEY
+
+    #WPA/WPA2-Personal
+    #wpa-driver wext
+    wpa-ssid UR_ESSID
+    # wpa-ap-scan: 1 for visible / 2 for hidden hubs
+    wpa-ap-scan 1
+    # wpa-proto: WPA for WPA1 / RSN for WPA2
+    wpa-proto WPA
+    # wpa-pairwise/wpa-group: TKIP for WPA1 / CCMP for WPA2
+    wpa-pairwise TKIP
+    wpa-group TKIP
+    wpa-key-mgmt WPA-PSK
+    # run "wpa_passphrase SSID KEY" to generate HEX_KEY
+    # paste the HEX_KEY here
+    wpa-psk HEX_KEY
