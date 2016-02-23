@@ -1,7 +1,7 @@
-# RaspberryPi Raspbian Configuration
+## RaspberryPi - Raspbian Configuration
 ---
 
-## Install NodeJs
+### Install Node.js from source
 
 ```
 sudo mkdir /opt/node
@@ -13,7 +13,7 @@ tar xvzf node-v0.10.2-linux-arm-pi.tar.gz
 sudo cp -r node-v0.10.2-linux-arm-pi/* /opt/node
 ```
 
-add Node.JS to your path variable:
+add Node.js to your PATH env-variable:
 
 ```
 nano /etc/profile
