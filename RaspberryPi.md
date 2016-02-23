@@ -1,7 +1,7 @@
 # RaspberryPi Raspbian Configuration
 ---
 
-## Intstall NodeJs
+## Install NodeJs
 
 ```
 sudo mkdir /opt/node
