@@ -39,7 +39,19 @@ apt-get install nodejs
 
 Note: this will most likely install an earlier version of Node.js on the rPi.
 
+### Update Node.js using [n](https://github.com/tj/n)
 
+```
+sudo npm cache clean -f
+sudo npm install -g n
+sudo n stable
+```
+
+```
+node -v
+```
+
+[source](http://web.archive.org/web/20150604015623/http://davidwalsh.name/upgrade-nodejs)
 
 
 
