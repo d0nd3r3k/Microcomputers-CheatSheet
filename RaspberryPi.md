@@ -31,9 +31,13 @@ export PATH
 ...
 ```
 
+### Install Node.js with apt-get
 
+```
+apt-get install nodejs
+```
 
-
+Note: this will most likely install an earlier version of Node.js on the rPi.
 
 
 
